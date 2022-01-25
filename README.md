@@ -21,9 +21,11 @@ allprojects {
 Add this to your module's `build.gradle` file (make sure the version matches the JitPack badge above):
 
 ```gradle
-dependencies {
-	        implementation 'com.github.tarifchakder:ToastCompat:v1.0.0'
-	}
+dependencies 
+      {
+      ...................
+      implementation 'com.github.tarifchakder:ToastCompat:Tag'
+}
 ```
 
 

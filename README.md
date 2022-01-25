@@ -5,3 +5,13 @@
 <div align="center">
 	<img src="https://github.com/tarifchakder/ToastCompat/blob/master/ic_launcher.png" width="128">
 </div>
+
+## Prerequisites
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```

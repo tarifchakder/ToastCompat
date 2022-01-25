@@ -7,6 +7,7 @@
 </div>
 
 An Android library that takes the standard toast to the next level with many styling options.
+
 Style your toasts either by code or with a style in `styles.xml`.
 
 ## Prerequisites

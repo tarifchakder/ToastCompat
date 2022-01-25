@@ -1,0 +1,3 @@
+rootProject.name = "ToastCompat"
+include ':app'
+include ':library'

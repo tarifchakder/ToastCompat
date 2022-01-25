@@ -1,0 +1,41 @@
+buildscript {
+
+    ext.kotlin_version = '1.6.10'
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+    packageId = "com.toastcompat.sample"
+    versionName = "1.0.0"
+    versionCode = 1
+    compileSDK = 31
+    minSDK = 21
+    targetSDK = 31
+    kotlinSDK = '1.7.0'
+    kotlinx_version = '1.5.2'
+    appcompat = '1.4.0'
+    material = '1.4.0'
+    constraintlayout = '2.1.2'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}

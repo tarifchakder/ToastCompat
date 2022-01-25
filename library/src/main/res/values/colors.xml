@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_background">@android:color/black</color>
+    <color name="default_text_color">@android:color/white</color>
+    <color name="default_gradient_start_color">#42275a</color>
+    <color name="default_gradient_end_color">#734b6d</color>
+
+</resources>

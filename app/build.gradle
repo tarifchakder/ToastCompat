@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSDK
+
+    defaultConfig {
+        applicationId rootProject.ext.packageId
+        minSdkVersion rootProject.ext.minSDK
+        targetSdkVersion rootProject.ext.targetSDK
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:$rootProject.ext.appcompat"
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.ext.constraintlayout"
+    implementation "androidx.core:core-ktx:$rootProject.ext.kotlinSDK"
+
+    implementation "com.google.android.material:material:$rootProject.ext.material"
+
+    implementation project(':library')
+
+}

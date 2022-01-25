@@ -12,6 +12,7 @@ An Android library that takes the standard toast to the next level with many sty
 Style your toasts either by code or with a style in `styles.xml`.
 
 ## Prerequisites
+
 ```gradle
 allprojects {
 	repositories {
@@ -27,10 +28,10 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 
 ```gradle
 dependencies 
-   {
-      ...
-      implementation 'com.github.tarifchakder:ToastCompat:v1.0.0'
-}
+        {
+         ...
+         implementation 'com.github.tarifchakder:ToastCompat:v1.0.0'
+   }
 ```
 
 ## License

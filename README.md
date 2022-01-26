@@ -22,7 +22,7 @@ Style your toasts either by code or with a style in `styles.xml`.
     <th>4. Dark Color Toast</th> 
   </tr>
   <tr>
-    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-3.png"/></td> 
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/png_20220126_144452_0000.png"/></td> 
     <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-5.png"/></td>
     <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Toast.png"/></td> 
     <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Color%20Toast.png"/></td> 

@@ -35,27 +35,32 @@ dependencies
    }
 ```
 
-```
+## Example using style attributes
+
+Define a style in `styles.xml`. put all style attributes:
+
+```xml
+
 <style name="allStyle">
-        <item name="toastBackgroundType">SOLID</item>
-        <item name="toastColorBackground">@color/black</item>
-        <item name="toastTextColor">@color/white</item>
-        <item name="toastRadius">15dp</item>
-        <item name="toastTextBold">true</item>
-        <item name="toastFont">@font/marko_one</item>
-        <item name="toastTextSize">12sp</item>
-        <item name="toastIconSize">20</item>
-        <item name="toastIconStart">@drawable/ic_baseline_circle_notifications_24</item>
-        <item name="toastIconEnd">@drawable/ic_baseline_circle_notifications_24</item>
-        <item name="toastGravity">BOTTOM</item>
-        <item name="toastStrokeColor">@android:color/holo_green_light</item>
-        <item name="toastStrokeWidth">2dp</item>
-        <item name="toastLength">LONG</item>
-    </style>
-    
+    <item name="toastBackgroundType">SOLID</item>
+    <item name="toastColorBackground">@color/black</item>
+    <item name="toastTextColor">@color/white</item>
+    <item name="toastRadius">15dp</item>
+    <item name="toastTextBold">true</item>
+    <item name="toastFont">@font/marko_one</item>
+    <item name="toastTextSize">12sp</item>
+    <item name="toastIconSize">20</item>
+    <item name="toastIconStart">@drawable/ic_baseline_circle_notifications_24</item>
+    <item name="toastIconEnd">@drawable/ic_baseline_circle_notifications_24</item>
+    <item name="toastGravity">BOTTOM</item>
+    <item name="toastStrokeColor">@android:color/holo_green_light</item>
+    <item name="toastStrokeWidth">2dp</item>
+    <item name="toastLength">LONG</item>
+</style>
 ```
 
 ## Donation
+
 If this project help you reduce time to develop, you can give me a cup of coffee :)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/tarifchakder)

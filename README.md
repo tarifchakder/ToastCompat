@@ -25,6 +25,7 @@ Style your toasts either by code or with a style in `styles.xml`.
   </tr>
 </table>
 
+For more style follow Demo apk and project 
 
 
 ## Prerequisites
@@ -102,8 +103,6 @@ val builder = ToastCompat.Builder(this)
 
             builder.show()
 ```
-
-For better understand follow example of this project or download demo apk
 
 ## Donation
 

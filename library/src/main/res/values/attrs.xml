@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="Toastify">
+    <declare-styleable name="ToastCompat">
         <attr name="toastTextBold" format="boolean" />
         <attr name="toastTextColor" format="color" />
         <attr name="toastFont" format="reference" />

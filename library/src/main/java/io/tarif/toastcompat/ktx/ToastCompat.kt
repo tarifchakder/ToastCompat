@@ -106,42 +106,42 @@ class ToastCompat : LinearLayout {
         val gdEndColor = ContextCompat.getColor(context, R.color.default_gradient_end_color)
 
         if (style > 0) {
-            typedArray = context.obtainStyledAttributes(style, R.styleable.Toastify)
-            drawable = typedArray!!.getDrawable(R.styleable.Toastify_toastDrawableBackground)
-            drawableTint = typedArray!!.getInt(R.styleable.Toastify_toastDrawableTint, 0)
-            backgroundType = typedArray!!.getInt(R.styleable.Toastify_toastBackgroundType, SOLID)
+            typedArray = context.obtainStyledAttributes(style, R.styleable.ToastCompat)
+            drawable = typedArray!!.getDrawable(R.styleable.ToastCompat_toastDrawableBackground)
+            drawableTint = typedArray!!.getInt(R.styleable.ToastCompat_toastDrawableTint, 0)
+            backgroundType = typedArray!!.getInt(R.styleable.ToastCompat_toastBackgroundType, SOLID)
             when (backgroundType) {
                 1 -> backgroundType = SOLID
                 2 -> backgroundType = GRADIENT
             }
 
-            toastGradientStartColor = typedArray!!.getColor(R.styleable.Toastify_toastGradientStartColor, gdStartColor)
-            toastGradientEndColor = typedArray!!.getColor(R.styleable.Toastify_toastGradientEndColor, gdEndColor)
-            toastBackgroundColor = typedArray!!.getColor(R.styleable.Toastify_toastColorBackground, solidColor)
+            toastGradientStartColor = typedArray!!.getColor(R.styleable.ToastCompat_toastGradientStartColor, gdStartColor)
+            toastGradientEndColor = typedArray!!.getColor(R.styleable.ToastCompat_toastGradientEndColor, gdEndColor)
+            toastBackgroundColor = typedArray!!.getColor(R.styleable.ToastCompat_toastColorBackground, solidColor)
 
             cornerRadius = typedArray!!.getDimension(
-                R.styleable.Toastify_toastRadius,
+                R.styleable.ToastCompat_toastRadius,
                 resources.getDimension(R.dimen.toast_default_corner_radius).toInt().toFloat()
             ).toInt()
-            length = typedArray!!.getInt(R.styleable.Toastify_toastLength, 0)
-            toastGravity = typedArray!!.getInt(R.styleable.Toastify_toastGravity, GRAVITY_BOTTOM)
+            length = typedArray!!.getInt(R.styleable.ToastCompat_toastLength, 0)
+            toastGravity = typedArray!!.getInt(R.styleable.ToastCompat_toastGravity, GRAVITY_BOTTOM)
             determineGravity(toastGravity)
 
 
-            if (typedArray!!.hasValue(R.styleable.Toastify_toastStrokeColor) && typedArray!!.hasValue(R.styleable.Toastify_toastStrokeWidth)) {
-                strokeWidth = typedArray!!.getDimension(R.styleable.Toastify_toastStrokeWidth, 0f).toInt()
-                strokeColor = typedArray!!.getColor(R.styleable.Toastify_toastStrokeColor, Color.TRANSPARENT)
+            if (typedArray!!.hasValue(R.styleable.ToastCompat_toastStrokeColor) && typedArray!!.hasValue(R.styleable.ToastCompat_toastStrokeWidth)) {
+                strokeWidth = typedArray!!.getDimension(R.styleable.ToastCompat_toastStrokeWidth, 0f).toInt()
+                strokeColor = typedArray!!.getColor(R.styleable.ToastCompat_toastStrokeColor, Color.TRANSPARENT)
             }
 
-            iconSize = typedArray!!.getInt(R.styleable.Toastify_toastIconSize, 33)
-            iconStart = typedArray!!.getResourceId(R.styleable.Toastify_toastIconStart, 0)
-            iconEnd = typedArray!!.getResourceId(R.styleable.Toastify_toastIconEnd, 0)
+            iconSize = typedArray!!.getInt(R.styleable.ToastCompat_toastIconSize, 33)
+            iconStart = typedArray!!.getResourceId(R.styleable.ToastCompat_toastIconStart, 0)
+            iconEnd = typedArray!!.getResourceId(R.styleable.ToastCompat_toastIconEnd, 0)
 
 
-            textColor = typedArray!!.getColor(R.styleable.Toastify_toastTextColor, textView!!.currentTextColor)
-            textBold = typedArray!!.getBoolean(R.styleable.Toastify_toastTextBold, false)
-            textSize = typedArray!!.getDimension(R.styleable.Toastify_toastTextSize, 14f.sp)
-            font = typedArray!!.getResourceId(R.styleable.Toastify_toastFont, 0)
+            textColor = typedArray!!.getColor(R.styleable.ToastCompat_toastTextColor, textView!!.currentTextColor)
+            textBold = typedArray!!.getBoolean(R.styleable.ToastCompat_toastTextBold, false)
+            textSize = typedArray!!.getDimension(R.styleable.ToastCompat_toastTextSize, 14f.sp)
+            font = typedArray!!.getResourceId(R.styleable.ToastCompat_toastFont, 0)
             isTextSizeFromStyleXml = textSize > 0
         }
 

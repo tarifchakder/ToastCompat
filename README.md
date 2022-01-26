@@ -28,8 +28,8 @@ Style your toasts either by code or with a style in `styles.xml`.
 <table style="width:100%">
   <tr>
     <th>3.Icon End</th>
-    <th>3.Icon Start</th>
-    <th>3.Icon Both Side</th>
+    <th>4.Icon Start</th>
+    <th>5.Icon Both Side</th>
   </tr>
   <tr>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/Screenshot_20220126-150441_ToastCompat.jpg"/></td>
@@ -40,9 +40,11 @@ Style your toasts either by code or with a style in `styles.xml`.
 
 <table style="width:100%">
   <tr>
-    <th>3.Icon Both Side</th>
+    <th>6.Icon Both Side</th>
+    <th>7.text color font and size</th>
   </tr>
   <tr>
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
   </tr>
 </table>

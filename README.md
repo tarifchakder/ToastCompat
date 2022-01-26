@@ -45,7 +45,7 @@ Style your toasts either by code or with a style in `styles.xml`.
   </tr>
   <tr>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
-    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/customize_text.jpg"/></td>
   </tr>
 </table>
 

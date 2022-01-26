@@ -49,7 +49,7 @@ Style your toasts either by code or with a style in `styles.xml`.
   </tr>
 </table>
 
-For more style follow Demo apk and project [![APK](https://img.shields.io/badge/Download-Demo-brightgreen.svg)](https://github.com/tarifchakder/ToastCompat/blob/master/ToastCompat-apk-demo.apk)
+For more style follow Demo apk and project    [![APK](https://img.shields.io/badge/Download-Demo-brightgreen.svg)](https://github.com/tarifchakder/ToastCompat/blob/master/ToastCompat-apk-demo.apk)
 
 
 ## Prerequisites

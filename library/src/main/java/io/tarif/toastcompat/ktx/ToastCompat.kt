@@ -290,7 +290,20 @@ class ToastCompat : LinearLayout {
         }
 
         toast!!.setGravity(toastGravity, xOffset, yOffset)
-        toast!!.duration = if (length == Toast.LENGTH_LONG) Toast.LENGTH_LONG else Toast.LENGTH_SHORT
+
+        val duration : Int = when (length) {
+            Toast.LENGTH_LONG -> {
+                Toast.LENGTH_LONG
+            }
+            Toast.LENGTH_SHORT -> {
+                Toast.LENGTH_SHORT
+            }
+            else -> {
+                length
+            }
+        }
+
+        toast!!.duration = duration
         toast!!.view = rootLayout
         toast!!.show()
     }

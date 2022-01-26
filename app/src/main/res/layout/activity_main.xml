@@ -38,7 +38,7 @@
             app:cornerRadius="10dp"
             app:elevation="10dp" />
 
-        <com.google.android.material.button.MaterialButton
+        <!--<com.google.android.material.button.MaterialButton
             android:id="@+id/gradient_background"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
@@ -52,7 +52,6 @@
             app:backgroundTint="@android:color/holo_purple"
             app:cornerRadius="10dp"
             app:elevation="10dp" />
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/drawable_background"
@@ -84,7 +83,6 @@
             app:cornerRadius="10dp"
             app:elevation="10dp" />
 
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/icon_start"
             style="@style/Widget.MaterialComponents.Button"
@@ -99,7 +97,6 @@
             app:backgroundTint="@android:color/holo_orange_dark"
             app:cornerRadius="10dp"
             app:elevation="10dp" />
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/icon_end"
@@ -116,7 +113,6 @@
             app:cornerRadius="10dp"
             app:elevation="10dp" />
 
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/icon_both"
             style="@style/Widget.MaterialComponents.Button"
@@ -132,7 +128,6 @@
             app:cornerRadius="10dp"
             app:elevation="10dp" />
 
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/customize_gravity"
             style="@style/Widget.MaterialComponents.Button"
@@ -147,7 +142,6 @@
             app:backgroundTint="@android:color/holo_blue_dark"
             app:cornerRadius="10dp"
             app:elevation="10dp" />
-
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/padding_view"
@@ -192,10 +186,9 @@
             android:textSize="13sp"
             app:backgroundTint="@android:color/holo_blue_light"
             app:cornerRadius="10dp"
-            app:elevation="10dp" />
+            app:elevation="10dp" />-->
 
 
     </LinearLayout>
-
 
 </androidx.core.widget.NestedScrollView>

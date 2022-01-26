@@ -9,8 +9,28 @@
 </div>
 
 An Android library that takes the standard toast to the next level with many styling options.
-
 Style your toasts either by code or with a style in `styles.xml`.
+
+
+# Types of Toast Style ❤️
+
+<table style="width:100%">
+  <tr>
+    <th>1.Solid background</th>
+    <th>2. Color Motion Toast</th> 
+    <th>3. Dark Toast </th>
+    <th>4. Dark Color Toast</th> 
+  </tr>
+  <tr>
+    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-3.png"/></td> 
+    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-5.png"/></td>
+    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Toast.png"/></td> 
+    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Color%20Toast.png"/></td> 
+
+  </tr>
+</table>
+
+
 
 ## Prerequisites
 
@@ -87,6 +107,8 @@ val builder = ToastCompat.Builder(this)
 
             builder.show()
 ```
+
+For better understand follow example of this project or download demo apk
 
 ## Donation
 

@@ -18,12 +18,26 @@ class MainActivity : AppCompatActivity() {
 
 
         bind.solidBackground.setOnClickListener {
-            val builder = ToastCompat.Builder(this)
+            /*val builder = ToastCompat.Builder(this)
                 .backgroundType(ToastCompat.SOLID)
                 .text("Solid background with corner in code")
                 .textColor(Color.WHITE)
-                .cornerRadius(10)
-                .backgroundColor(Color.BLACK)
+                .cornerRadius(5)
+                .textSize(14f)
+                .font(R.font.palanquin_dark)
+                .length(100)
+                .backgroundColor(Color.parseColor("#229954"))
+                .build()*/
+
+            val builder = ToastCompat.Builder(this)
+                .backgroundType(ToastCompat.SOLID)
+                .text("This is ToastCompat !!")
+                .textColor(Color.WHITE)
+                .cornerRadius(5)
+                .textSize(14f)
+                .font(R.font.palanquin_dark)
+                .length(100)
+                .backgroundColor(Color.parseColor("#8E44AD"))
                 .build()
 
             builder.show()
@@ -34,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        bind.gradientBackground.setOnClickListener {
+       /* bind.gradientBackground.setOnClickListener {
             val builder = ToastCompat.Builder(this)
                 .backgroundType(ToastCompat.GRADIENT)
                 .gradientColor(Color.RED,Color.BLUE)
@@ -213,7 +227,7 @@ class MainActivity : AppCompatActivity() {
                 .build()
 
             builder.show()
-        }
+        }*/
 
     }
 }

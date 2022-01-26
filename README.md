@@ -71,7 +71,7 @@ Add this to your module's `build.gradle` file (make sure the version matches the
 dependencies 
         {
          ...
-         implementation 'com.github.tarifchakder:ToastCompat:1.2.0'
+         implementation 'com.github.tarifchakder:ToastCompat:1.3.0'
    }
 ```
 

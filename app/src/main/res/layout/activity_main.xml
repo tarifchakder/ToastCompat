@@ -38,7 +38,7 @@
             app:cornerRadius="10dp"
             app:elevation="10dp" />
 
-        <!--<com.google.android.material.button.MaterialButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/gradient_background"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
@@ -186,7 +186,7 @@
             android:textSize="13sp"
             app:backgroundTint="@android:color/holo_blue_light"
             app:cornerRadius="10dp"
-            app:elevation="10dp" />-->
+            app:elevation="10dp" />
 
 
     </LinearLayout>

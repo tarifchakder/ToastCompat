@@ -37,11 +37,11 @@ dependencies
 
 ## Example using style attributes
 
-Define a style in `styles.xml`. put all style attributes:
+step 1 : Define a style in `styles.xml`. put all style attributes:
 
 ```xml
 
-<style name="allStyle">
+<style name="ToastCompat">
     <item name="toastBackgroundType">SOLID</item>
     <item name="toastColorBackground">@color/black</item>
     <item name="toastTextColor">@color/white</item>
@@ -57,6 +57,35 @@ Define a style in `styles.xml`. put all style attributes:
     <item name="toastStrokeWidth">2dp</item>
     <item name="toastLength">LONG</item>
 </style>
+```
+
+Step 2 : Pass your style attributes to static constructor
+
+```kotlin
+ToastCompat.makeText(this, "This is ToastCompat !!", Toast.LENGTH_LONG, R.style.ToastCompat).show()
+```
+
+## Example with Code by Calling Build Pattern
+
+```kotlin
+val builder = ToastCompat.Builder(this)
+                .backgroundType(ToastCompat.SOLID)
+                .backgroundColor(Color.BLACK)
+                .text("This is ToastCompat !!")
+                .textBold()
+                .textColor(Color.WHITE)
+                .textSize(14f)
+                .textBold()
+                .font(R.font.marko_one)
+                .stroke(1,Color.GREEN)
+                .iconEnd(R.drawable.ic_baseline_circle_notifications_24)
+                .iconStart(R.drawable.ic_baseline_circle_notifications_24)
+                .iconSize(33)
+                .gravity(ToastCompat.GRAVITY_CENTER)
+                .padding(25f,30f,30f)
+                .build()
+
+            builder.show()
 ```
 
 ## Donation

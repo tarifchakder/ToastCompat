@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ToastCompat</string>
+    <string name="long_press_toast_show_using_xml">Long Press Toast show using XML</string>
 </resources>

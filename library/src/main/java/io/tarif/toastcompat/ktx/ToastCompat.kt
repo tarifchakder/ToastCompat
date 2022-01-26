@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
+import android.os.Build
 import android.util.Log
 import android.util.TypedValue
 import android.view.Gravity
@@ -132,7 +133,7 @@ class ToastCompat : LinearLayout {
                 strokeColor = typedArray!!.getColor(R.styleable.Toastify_toastStrokeColor, Color.TRANSPARENT)
             }
 
-            iconSize = typedArray!!.getInt(R.styleable.Toastify_toastIconSize, 20)
+            iconSize = typedArray!!.getInt(R.styleable.Toastify_toastIconSize, 33)
             iconStart = typedArray!!.getResourceId(R.styleable.Toastify_toastIconStart, 0)
             iconEnd = typedArray!!.getResourceId(R.styleable.Toastify_toastIconEnd, 0)
 
@@ -156,7 +157,11 @@ class ToastCompat : LinearLayout {
         // background
         if (drawable != null) {
             rootLayout!!.background = drawable
-            if (drawableTint != -1) rootLayout!!.background.setTint(drawableTint)
+            if (drawableTint != -1) {
+                if (hasLoliPop()) {
+                    rootLayout!!.background.setTint(drawableTint)
+                }
+            }
         } else if (drawable == null) {
             when (backgroundType) {
                 SOLID -> {
@@ -260,7 +265,7 @@ class ToastCompat : LinearLayout {
         }
 
         if (iconEnd == 0 && iconStart == 0) {
-            rootLayout!!.rootView.updatePadding(left = 15.dp, top = 8.dp, right = 15.dp, bottom = 8.dp)
+            rootLayout!!.rootView.updatePadding(left = paddingHorizontal, top = paddingVertical, right = paddingHorizontal, bottom = paddingVertical)
         }
 
     }
@@ -283,11 +288,8 @@ class ToastCompat : LinearLayout {
         determineGravity(toastGravity)
         if (xOffset == 0 && yOffset == 0) {
             xOffset = 0
-            yOffset = if (toastGravity == GRAVITY_CENTER) 0 else toast!!.yOffset
+            yOffset = if (toastGravity == Gravity.CENTER) 0 else toast!!.yOffset
         }
-        Log.d("Tarif", toastGravity.toString())
-        Log.d("Tarif", xOffset.toString())
-        Log.d("Tarif", yOffset.toString())
 
         toast!!.setGravity(toastGravity, xOffset, yOffset)
         toast!!.duration = if (length == Toast.LENGTH_LONG) Toast.LENGTH_LONG else Toast.LENGTH_SHORT
@@ -302,7 +304,7 @@ class ToastCompat : LinearLayout {
     }
 
     class Builder(val context: Context) {
-        internal var cornerRadius = -1
+        internal var cornerRadius = 8
         internal var backgroundType = SOLID
         internal var drawable: Drawable? = null
         internal var drawableTint = -1
@@ -322,8 +324,8 @@ class ToastCompat : LinearLayout {
         internal var textBold = false
         internal var text: String = ""
         internal var gravity = GRAVITY_BOTTOM
-        internal var xOffset = -1
-        internal var yOffset = -1
+        internal var xOffset = 0
+        internal var yOffset = 0
         internal var paddingVertical = 8.dp
         internal var paddingHorizontal = 15.dp
         internal var drawablePadding = 16.dp
@@ -432,6 +434,7 @@ class ToastCompat : LinearLayout {
         /**
          * @param drawableTint set custom shape view of Toastify background
          * If background Drawable set [ backgroundColor() , backgroundType() are optional to use ]
+         * This should be working Above LOLIPOP
          * */
         fun setDrawableTint(drawableTint: Int): Builder {
             this.drawableTint = drawableTint

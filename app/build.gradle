@@ -29,7 +29,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
 
     buildFeatures {
@@ -46,5 +46,7 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.ext.material"
 
     implementation project(':library')
+
+   // implementation 'com.github.tarifchakder:ToastCompat:Tag'
 
 }

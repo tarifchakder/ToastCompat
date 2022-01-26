@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/app/src/main/res/drawable/ic_baseline_circle_notifications_24.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/app/src/main/res/layout/activity_main.xml" value="0.3484375" />
+        <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/app/src/main/res/layout/styled_button.xml" value="0.3625" />
         <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/MR Tech/Desktop/GitHub/ToastCompat/library/src/main/res/drawable/round_view_bg.xml" value="0.37864583333333335" />
@@ -13,6 +14,12 @@
       </map>
     </option>
   </component>
+  <component name="EntryPointsManager">
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="androidx.annotation.ChecksSdkIntAtLeast" />
+    </list>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

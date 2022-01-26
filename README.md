@@ -33,6 +33,7 @@ Style your toasts either by code or with a style in `styles.xml`.
   </tr>
   <tr>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/Screenshot_20220126-150441_ToastCompat.jpg"/></td>
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/icon_start.jpg"/></td>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
   </tr>
 </table>

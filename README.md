@@ -17,9 +17,11 @@ Style your toasts either by code or with a style in `styles.xml`.
 <table style="width:100%">
   <tr>
     <th>1.Solid background</th>
+    <th>2.Gradient background</th>
   </tr>
   <tr>
     <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/png_20220126_144452_0000.png"/></td>
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/png_20220126_145846_0000.png"/></td>
   </tr>
 </table>
 

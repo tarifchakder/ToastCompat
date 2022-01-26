@@ -38,6 +38,15 @@ Style your toasts either by code or with a style in `styles.xml`.
   </tr>
 </table>
 
+<table style="width:100%">
+  <tr>
+    <th>3.Icon Both Side</th>
+  </tr>
+  <tr>
+    <td><img src = "https://github.com/tarifchakder/ToastCompat/blob/master/screenshots/both_icon.jpg"/></td>
+  </tr>
+</table>
+
 For more style follow Demo apk and project 
 
 

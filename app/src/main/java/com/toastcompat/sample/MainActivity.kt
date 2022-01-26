@@ -30,14 +30,11 @@ class MainActivity : AppCompatActivity() {
                 .build()*/
 
             val builder = ToastCompat.Builder(this)
-                .backgroundType(ToastCompat.SOLID)
-                .text("This is ToastCompat !!")
+                .backgroundType(ToastCompat.GRADIENT)
+                .gradientColor(Color.RED,Color.BLUE)
+                .text("Gradient background")
                 .textColor(Color.WHITE)
-                .cornerRadius(5)
-                .textSize(14f)
-                .font(R.font.palanquin_dark)
-                .length(100)
-                .backgroundColor(Color.parseColor("#8E44AD"))
+                .gradientColor(Color.parseColor("#85C1E9"),Color.parseColor("#2E86C1"))
                 .build()
 
             builder.show()

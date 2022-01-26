@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.toastcompat.sample.databinding.ActivityMainBinding
+import io.tarif.toastcompat.ktx.ToastCompat
 
 class MainActivity : AppCompatActivity() {
 

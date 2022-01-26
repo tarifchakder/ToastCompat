@@ -47,6 +47,6 @@ dependencies {
 
    // implementation project(':library')
 
-    implementation 'com.github.tarifchakder:ToastCompat:v1.2.0'
+    implementation 'com.github.tarifchakder:ToastCompat:1.2.0'
 
 }
